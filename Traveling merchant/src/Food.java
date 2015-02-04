@@ -1,6 +1,7 @@
 
-public abstract class Food extends Items
+public abstract class Food extends Item
 	{
+
 
 	
 	}
