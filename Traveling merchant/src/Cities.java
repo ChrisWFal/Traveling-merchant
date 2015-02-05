@@ -7,17 +7,19 @@ public class Cities
 	public String name;
 	public static int number;
 	public int distance;
-	public int stock;
+	public int capacity;
+	static int randomNumber = 0;
+	
 	
 	static ArrayList <Item> inventory = new ArrayList <Item>();
-	static int randomNumber = (int) Math.random()* 20 + 1;
+
 	
-	public Cities(String n, int nu, int d, int s)
+	public Cities(String n, int nu, int d, int c)
 		{
 		name = n;
 		number = nu;
 		distance = d;
-		stock = s;
+		capacity = c;
 		
 		
 		
@@ -29,11 +31,17 @@ public class Cities
 		return number;
 		}
 	
+	
 	public static void addItems()
 		{
+		randomNumber = (int)Math.random() * 10 + 1;
 		inventory.add(new Item( randomNumber ,"Hot Dogs", 2, 2, 2));
+		randomNumber = (int)Math.random() * 10 + 1;
 		inventory.add(new Item( randomNumber ,"Oranges", 3, 3, 2));
+		randomNumber = (int)Math.random() * 10 + 1;
 		inventory.add(new Item( randomNumber ,"Meat", 10, 10, 5));
+		randomNumber = (int)Math.random() * 10 + 1;
 		inventory.add(new Item( randomNumber ,"Potatoes", 5, 5, 3));
+		randomNumber = (int)Math.random() * 10 + 1;
 		}
 	}

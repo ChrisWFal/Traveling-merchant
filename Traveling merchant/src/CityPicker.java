@@ -16,9 +16,9 @@ public class CityPicker
 		}
 	public static void createCities()
 		{
-		myArray.add(new Cities("Denver", 1, 1, stock));
-		myArray.add(new Cities("Boulder", 2, 2, stock ));
-		myArray.add(new Cities("Colorado Springs", 3, 3, stock));
+		myArray.add(new Cities("Denver", 1, 1, stock, stock, stock, stock));
+		myArray.add(new Cities("Boulder", 2, 2, stock, stock, stock, stock ));
+		myArray.add(new Cities("Colorado Springs", 3, 3, stock, stock, stock, stock));
 		}
 	public static void pickCity()
 		{

@@ -10,7 +10,9 @@ public class Runner
 	
 	public static void main(String[] args)
 		{
+		Cities.addItems();
 		greet();
+		
 
 		}
 	public static void greet()
@@ -31,6 +33,15 @@ public class Runner
 			{
 			System.out.println("Okay maybe next time");
 			}
+		}
+	
+	
+	public static void goToCity()
+		{
+		System.out.println("You arrive at " + Cities.getCity());
+		
+		
+		
 		
 		
 		}
