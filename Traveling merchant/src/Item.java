@@ -1,7 +1,7 @@
 
 public class Item
 	{
-	public int amount;
+	public int amount = 0;
 	public String itemName;
 	public int baseBuy;
 	public int baseSell;
