@@ -4,7 +4,7 @@ import java.io.*;
 
 public class Cities
 	{
-	public String name;
+	public static String name;
 	public static int number;
 	public int distance;
 	public int capacity;
@@ -29,6 +29,10 @@ public class Cities
 	public static int getCity()
 		{
 		return number;
+		}
+	public static String getName()
+		{
+		return name;
 		}
 	
 	

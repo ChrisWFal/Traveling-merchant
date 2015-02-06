@@ -1,5 +1,5 @@
 
-public class Plane extends Transportation
+public class Train extends Transportation
 	{
 	
 	public void delays()
