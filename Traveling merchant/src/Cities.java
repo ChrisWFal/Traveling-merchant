@@ -5,7 +5,7 @@ import java.io.*;
 public class Cities
 	{
 	public String name;
-	public static int number;
+	public int number;
 	public int distance;
 	public int capacity;
 	static int randomNumber = 0;
@@ -20,9 +20,6 @@ public class Cities
 		number = nu;
 		distance = d;
 		capacity = c;
-		
-		
-		
 		}
 	
 	
@@ -52,5 +49,14 @@ public class Cities
 		inventory.add(new Item( randomNumber ,"Potatoes", 5, 5, 3));
 		Inventory.setPotato(randomNumber);
 
+		}
+	
+	
+	public static void storeStock()
+		{
+		for(int i = 0; i < inventory.size(); i ++)
+			{
+			System.out.println((i + 1) + "." + inventory.get(i).getItemName() + "  " + inventory.get(i).getAmount() + "  $" + inventory.get(i).getBaseBuy());
+			}
 		}
 	}

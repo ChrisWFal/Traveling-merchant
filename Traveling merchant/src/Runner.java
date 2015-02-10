@@ -13,6 +13,7 @@ public class Runner
 	static ArrayList <Cities> myArray = new ArrayList <Cities>();
 	static int city;
 	static int cityMenuPick;
+	static int whatToBuy;
 
 	
 	
@@ -137,7 +138,8 @@ public class Runner
 			{
 			case 1:
 				{
-				
+				Cities.storeStock();
+				CityOptions.buy();
 				}
 			case 2:
 				{

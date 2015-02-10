@@ -22,9 +22,17 @@ public class Item
 		{
 		return itemName;
 		}
-	public int getNumber()
+	public int getAmount()
 		{
 		return amountOne;
+		}
+	public int getBaseBuy()
+		{
+		return baseBuy;
+		}
+	public int getBaseSell()
+		{
+		return baseSell;
 		}
 	
 	
