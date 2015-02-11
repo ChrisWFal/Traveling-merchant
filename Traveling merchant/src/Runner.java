@@ -25,7 +25,7 @@ public class Runner
 
 		
 		createCities();
-		Cities.addItems();
+		//Cities.addItems();
 		greet(); 
 		
 
@@ -63,7 +63,6 @@ public class Runner
 			System.out.println("\n Would you like to :");
 			System.out.println("1. travel to a city");
 			System.out.println("2. view your inventory");
-			System.out.println("3. visit local store");
 			System.out.println("4. quit the game");
 		
 			Scanner userInput = new Scanner (System.in);
@@ -80,24 +79,9 @@ public class Runner
 						}
 					city = userInput.nextInt();
 					
-					switch(city)
-					{
-					 	case 1 :
-					 		{
-					 		cityMenu(city);
-					 		break;
-					 		}
-					 	case 2 :
-					 		{
-					 		
-					 		break;
-					 		}
-					 	case 3 :
-					 		{
-					 		break;
-					 		}
-					}
+					cityMenu(city);
 					
+
 					
 					}
 					break;
@@ -106,12 +90,7 @@ public class Runner
 					Inventory.viewInventory();
 					break;
 					}
-				case 3 :
-					{
-					
-					break;
-					}
-				case 4:
+				case 3:
 					{
 					System.out.println("ok maybe next time");
 					play = false;
@@ -125,11 +104,14 @@ public class Runner
 	public static void cityMenu(int cityPicked)
 		{
 		city = cityPicked;
+		Cities.addItems();
+		
 		System.out.println("You arrive in " + myArray.get(city - 1).getName());
 		System.out.println("Would you like to:");
 		System.out.println("1. Buy items");
 		System.out.println("2. Sell items");
 		System.out.println("3. return home");
+
 		
 		Scanner userInput = new Scanner(System.in);
 		cityMenuPick = userInput.nextInt();
@@ -140,16 +122,24 @@ public class Runner
 				{
 				Cities.storeStock();
 				CityOptions.buy();
+				break;
 				}
 			case 2:
 				{
+				Cities.storeStock();
 				
+				break;
 				}
 			case 3:
 				{
-			
+				System.out.println("You return home");
+				mainMenu();
+				break;
 				}
 			}
+		
+		Cities.inventory.clear();
+		
 		}
 	
 	

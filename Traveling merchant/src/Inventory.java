@@ -34,13 +34,25 @@ public class Inventory
 		{
 		orangeCount = orange;
 		}
+	public static int getOrange()
+		{
+		return orangeCount;
+		}
 	public static void setMeat(int meat)
 		{
 		meatCount = meat;
 		}
+	public static int getMeat()
+		{
+		return meatCount;
+		}
 	public static void setPotato(int potato)
 		{
 		potatoCount = potato;
+		}
+	public static int getPotato()
+		{
+		return potatoCount;
 		}
 	
 	

@@ -34,6 +34,10 @@ public class Item
 		{
 		return baseSell;
 		}
+	public void setAmount(int amount)
+		{
+		amountOne = amount;
+		}
 	
 	
 	}
