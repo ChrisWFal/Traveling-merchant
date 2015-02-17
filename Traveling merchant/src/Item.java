@@ -1,11 +1,11 @@
 
 public class Item
 	{
-	int amountOne;
-	String itemName;
-	int baseBuy;
-	int baseSell;
-	int size;
+	private int amountOne;
+	private String itemName;
+	private static int baseBuy;
+	private static int baseSell;
+	private int size;
 	
 	static int randomNumber = (int)Math.random()*10 + 1;
 	
@@ -26,11 +26,11 @@ public class Item
 		{
 		return amountOne;
 		}
-	public int getBaseBuy()
+	public static int getBaseBuy()
 		{
 		return baseBuy;
 		}
-	public int getBaseSell()
+	public static int getBaseSell()
 		{
 		return baseSell;
 		}

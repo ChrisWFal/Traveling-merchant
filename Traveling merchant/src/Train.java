@@ -1,29 +1,19 @@
 
 public class Train extends Transportation
 	{
-	
-	public void delays()
-		{
-		/*
-		 * if you are sending a perishable item and there is a delay you will lose it.
-		 */
-		}
 
 	@Override
-	public void takeFuel()
+	public void addInventory()
 		{
-		/*
-		 * Will take alot of fuel
-		 */
+		Inventory.setInventory(Inventory.getInventory() + 20);
+		Inventory.maxInventory = 60;
 		
 		}
 
 	@Override
-	public void takeCargo()
+	public void costMoney()
 		{
-		/*
-		 * will hold alot of cargo
-		 */
+		Inventory.setMoney(Inventory.getMoney() - 200);
 		
 		}
 	

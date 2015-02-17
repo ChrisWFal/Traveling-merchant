@@ -2,7 +2,11 @@
 public abstract class Transportation
 	{
 	
-	public abstract void takeFuel();
-	public abstract void takeCargo();
+	public abstract void addInventory();
+	public abstract void costMoney();
+	public static void takesFuel()
+		{
+		
+		}
 	
 	}

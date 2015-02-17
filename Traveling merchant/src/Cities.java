@@ -4,11 +4,11 @@ import java.io.*;
 
 public class Cities
 	{
-	public String name;
-	public int number;
-	public int distance;
-	public int capacity;
-	static int randomNumber = 0;
+	private String name;
+	private int number;
+	private int distance;
+	private int capacity;
+	private static int randomNumber = 0;
 	
 	
 	static ArrayList <Item> inventory = new ArrayList <Item>();
@@ -49,11 +49,13 @@ public class Cities
 		inventory.add(new Item( randomNumber ,"Potatoes", 5, 5, 3));
 		Inventory.setPotato(randomNumber);
 
+		Inventory.setInventory(Inventory.getInventory() - Inventory.getHotDog() - Inventory.getOrange()- Inventory.getMeat() - Inventory.getPotato());
 		}
 	
 	
 	public static void storeStock()
 		{
+		
 		for(int i = 0; i < inventory.size(); i ++)
 			{
 			System.out.println((i + 1) + "." + inventory.get(i).getItemName() + "  " + inventory.get(i).getAmount() + "  $" + inventory.get(i).getBaseBuy());

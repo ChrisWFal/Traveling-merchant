@@ -1,29 +1,19 @@
 
 public class Truck extends Transportation
 	{
-	
-	public void breaksDown()
-		{
-		/*
-		 * if you are sending a perishable item and a truck breaks down you will lose it.
-		 */
-		}
 
 	@Override
-	public void takeFuel()
+	public void addInventory()
 		{
-		/*
-		 * will take less fuel
-		 */
+		 Inventory.setInventory(Inventory.getInventory() + 10);
+		 Inventory.maxInventory = 50;
 		
 		}
 
 	@Override
-	public void takeCargo()
+	public void costMoney()
 		{
-		/*
-		 * will hold less cargo than planes.
-		 */
+		Inventory.setMoney(Inventory.getMoney() - 100);
 		
 		}
 	
